@@ -9,6 +9,8 @@ tags:
   - Hexo
 categories: 博客开发
 keywords: [Markdown, Hexo, 样式列表]
+top_group_index: 1
+cover: https://justyy.com/wp-content/uploads/2016/01/markdown-syntax-language.png
 ---
 
 

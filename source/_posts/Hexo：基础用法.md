@@ -5,6 +5,7 @@ tags:
   - Hexo
 categories: 博客开发
 keywords: [基础用法, Hexo]
+cover: https://p.fiveth.cc/img/m/hexo.jpg
 ---
 
 

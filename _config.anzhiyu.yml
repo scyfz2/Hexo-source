@@ -9,10 +9,10 @@ menu:
   #   朋友圈: /fcircle/ || anzhiyu-icon-artstation
   #   留言板: /comments/ || anzhiyu-icon-envelope
 
-  # 我的:
+  我的:
   #   音乐馆: /music/ || anzhiyu-icon-music
   #   追番页: /bangumis/ || anzhiyu-icon-bilibili
-  #   相册集: /album/ || anzhiyu-icon-images
+    相册集: /album/ || anzhiyu-icon-images
   #   小空调: /air-conditioner/ || anzhiyu-icon-fan
 
   # 关于:
@@ -28,14 +28,14 @@ nav:
   menu:
     - title: 网页
       item:
-        - name: 博客
-          link: https://blog.anheyu.com/
+        - name: Github
+          link: https://github.com/scyfz2
           icon: /img/favicon.ico
-    - title: 项目
-      item:
-        - name: 安知鱼图床
-          link: https://image.anheyu.com/
-          icon: https://image.anheyu.com/favicon.ico
+    # - title: 项目
+    #   item:
+    #     - name: 安知鱼图床
+    #       link: https://image.anheyu.com/
+    #       icon: https://image.anheyu.com/favicon.ico
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -166,7 +166,7 @@ cover:
   position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    # - /img/default_cover.jpg
+    - /img/default_cover.jpg
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -176,7 +176,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: "请尝试站内搜索寻找文章"
+  subtitle: "请尝试站内寻找文章"
   background: https://bu.dusays.com/2023/05/08/645907596997d.gif
 
 post_meta:
@@ -197,7 +197,7 @@ post_meta:
 # 主色调相关配置
 mainTone:
   enable: true # true or false 文章是否启用获取图片主色调
-  mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求both/cdn/api获取主色调，而是直接使用配置的颜色
+  mode: both # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求both/cdn/api获取主色调，而是直接使用配置的颜色
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
   cover_change: true # 整篇文章跟随cover修改主色调
@@ -248,12 +248,12 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img: /img/wechatpay.png
       link:
       text: 微信
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img: /img/alipay.png
       link:
       text: 支付宝
 
@@ -318,12 +318,12 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: # Twikoo/Waline
+  use: Waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
-  count: false # Display comment count in post's top_img
+  count: true  # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
 # valine
@@ -353,7 +353,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: # Waline server address url
+  serverURL: https://waline-blog-fan99.vercel.app/ # Waline server address url
   bg: # Waline background
   pageview: false
   meta_css: false # 是否引入 waline-meta.css ,以便显示 meta图标
@@ -539,7 +539,7 @@ footer:
       - link: https://icp.gov.moe/?keyword=20250912
         text: 萌ICP备20250912号
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
       # Effect Speed Options (打字效果速度参数)
@@ -547,7 +547,7 @@ footer:
       typeSpeed: 150 # type speed in milliseconds
       backSpeed: 50 # backspacing speed in milliseconds
       # loop (循环打字)
-      loop: true
+      loop: false
       # source 调用第三方服务
       # source: false 关闭调用
       # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
@@ -557,7 +557,7 @@ footer:
       source: 1
       # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
       sub:
-        # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+        - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
 
 # Analysis
 # --------------------------------------
@@ -689,8 +689,8 @@ canvas_ribbon:
 
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -705,16 +705,16 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
   shake: false #  open shake (抖动特效)
   mobile: false
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
-  enable: false
-  zIndex: 9999 # -1 or 9999
-  mobile: false
+  enable: true
+  zIndex: 99 # -1 or 9999
+  mobile: true
 
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
@@ -795,7 +795,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
+  avatar: /img/avatar.jpg # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -857,9 +857,9 @@ aside:
 # busuanzi count for PV / UV in site
 # 访问人数
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -880,7 +880,7 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (简繁转换)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # Right-click menu default text
@@ -1053,7 +1053,7 @@ css_prefix: true
 
 # 首页顶部相关配置
 home_top:
-  enable: true # 开关
+  enable: false # 开关
   timemode: date #date/updated
   title: 生活明朗
   subTitle: 万物可爱。
@@ -1099,7 +1099,7 @@ universe:
 
 # 页面卡片顶部气泡升起效果
 bubble:
-  enable: false
+  enable: true
 
 #  控制台打印信息
 console:
@@ -1235,7 +1235,7 @@ peoplecanvas:
 # 动效
 dynamicEffect:
   postTopWave: true # 文章顶部波浪效果
-  postTopRollZoomInfo: false # 文章顶部滚动时缩放
+  postTopRollZoomInfo: true # 文章顶部滚动时缩放
   pageCommentsRollZoom: false # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
 
 # Inject
@@ -1249,6 +1249,7 @@ inject:
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
+    - <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.4.0/color-thief.umd.min.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work

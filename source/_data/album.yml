@@ -1,0 +1,79 @@
+- class_name: 世界各地夕阳与风景
+  path_name: /worldScenery
+  type: 2
+  description: 因为到不了世界各地，所以请网友们发来了各地的夕阳与风景🌇。
+  cover: https://bu.dusays.com/2023/04/09/64329399d1175.jpg
+  top_background: https://bu.dusays.com/2023/06/30/649e546ada7dd.webp
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  top_link: /album
+  top_btn_text: 返回
+  album_list:
+    - date: 2022/10/26 01:00:00
+      content: 湘潭的一角。
+      address: 湖南湘潭
+      from: 再吃一口就减肥
+      image:
+        - https://bu.dusays.com/2023/04/09/64329399db122.webp
+    - date: 2022-10-25
+      content: 洛阳暴雨后的天空。
+      address: 河南洛阳
+      from: 紫菜卷
+      image:
+        - https://bu.dusays.com/2023/04/09/64329399db122.webp
+        - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
+
+- class_name: 我的日常
+  path_name: /dailyPhoto
+  type: 1
+  description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
+  top_link: /album
+  top_btn_text: 返回
+  top_background: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
+  cover: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
+  album_list:
+    - date: 2025-2-14
+      content: 专业团队
+      image:
+        - https://pic1.imgdb.cn/item/67af1cc9d0e0a243d4ff366c.jpg
+
+- class_name: 赛博朋克2077
+  path_name: /cyberpunk2077
+  rowHeight: 420
+  type: 2
+  description: 《赛博朋克2077》是一款由CD Projekt RED制作的角色扮演游戏。
+  top_link: /album
+  top_btn_text: 返回
+  top_background: https://pic1.imgdb.cn/item/67af1f3ed0e0a243d4ff39ac.png
+  cover: https://pic1.imgdb.cn/item/67af1f3ed0e0a243d4ff39ac.png
+  album_list:
+    - date: 2025-2-14
+      content: 大阿卡纳塔罗牌
+      image:
+        - https://pic1.imgdb.cn/item/67af1f3ed0e0a243d4ff39ac.png
+        - https://pic1.imgdb.cn/item/67af1f3fd0e0a243d4ff39ad.png
+        - https://pic1.imgdb.cn/item/67af1f3fd0e0a243d4ff39ae.png
+        - https://pic1.imgdb.cn/item/67af1f40d0e0a243d4ff39af.png
+        - https://pic1.imgdb.cn/item/67af1f40d0e0a243d4ff39b0.png
+        - https://pic1.imgdb.cn/item/67af214dd0e0a243d4ff3a7b.png
+        - https://pic1.imgdb.cn/item/67af214dd0e0a243d4ff3a7c.png
+        - https://pic1.imgdb.cn/item/67af214ed0e0a243d4ff3a7e.png
+        - https://pic1.imgdb.cn/item/67af214ed0e0a243d4ff3a7f.png
+        - https://pic1.imgdb.cn/item/67af214fd0e0a243d4ff3a80.png
+        - https://pic1.imgdb.cn/item/67af21bdd0e0a243d4ff3ae5.png
+        - https://pic1.imgdb.cn/item/67af21bed0e0a243d4ff3ae6.png
+        - https://pic1.imgdb.cn/item/67af21bed0e0a243d4ff3ae7.png
+        - https://pic1.imgdb.cn/item/67af21bfd0e0a243d4ff3ae8.png
+        - https://pic1.imgdb.cn/item/67af21bfd0e0a243d4ff3ae9.png
+        - https://pic1.imgdb.cn/item/67af221dd0e0a243d4ff3afc.png
+        - https://pic1.imgdb.cn/item/67af221dd0e0a243d4ff3afd.png
+        - https://pic1.imgdb.cn/item/67af221ed0e0a243d4ff3afe.png
+        - https://pic1.imgdb.cn/item/67af221ed0e0a243d4ff3aff.png
+        - https://pic1.imgdb.cn/item/67af221fd0e0a243d4ff3b00.png
+        - https://pic1.imgdb.cn/item/67af2254d0e0a243d4ff3b0b.png
+        - https://pic1.imgdb.cn/item/67af2255d0e0a243d4ff3b0c.png
+        - https://pic1.imgdb.cn/item/67af2255d0e0a243d4ff3b0d.png
+        - https://pic1.imgdb.cn/item/67af2256d0e0a243d4ff3b0e.png
