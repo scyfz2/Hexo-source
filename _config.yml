@@ -4,8 +4,8 @@
 
 # Site
 title: 帆的博客
-subtitle: '春天来啦！嘎嘎嘎！'
-description: '春天来啦！'
+subtitle: '秋天来啦！嘎嘎嘎！'
+description: '秋天来啦！'
 keywords: keywords
 author: Fan
 language: zh-CN
@@ -102,5 +102,6 @@ theme: anzhiyu
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/scyfz2/Hexo.git
+  repo: git@github.com:scyfz2/Hexo.git
   branch: main
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
